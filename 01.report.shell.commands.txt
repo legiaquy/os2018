@@ -1,0 +1,63 @@
+lee@Qlee-VirtualBox ~ $ echo hello world
+hello world
+
+lee@Qlee-VirtualBox ~ $ passwd
+Changing password for lee.
+(current) UNIX password: 
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+
+lee@Qlee-VirtualBox ~ $ date
+Mon Dec  4 22:16:17 ICT 2017
+
+lee@Qlee-VirtualBox ~ $ hostname
+Qlee-VirtualBox
+
+lee@Qlee-VirtualBox ~ $ arch
+x86_64
+
+lee@Qlee-VirtualBox ~ $ uname -a
+Linux Qlee-VirtualBox 4.10.0-38-generic #42~16.04.1-Ubuntu SMP Tue Oct 10 16:32:20 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+
+lee@Qlee-VirtualBox ~ $ dmesg
+[ 1137.466079] usb 1-1: Manufacturer: VirtualBox
+[ 1137.482126] input: VirtualBox USB Tablet as /devices/pci0000:00/0000:00:06.0/usb1/1-1/1-1:1.0/0003:80EE:0021.0004/input/input10
+[ 1137.603307] hid-generic 0003:80EE:0021.0004: input,hidraw0: USB HID v1.10 Mouse [VirtualBox USB Tablet] on usb-0000:00:06.0-1/input0
+[ 1137.922229] e1000: enp0s3 NIC Link is Down
+[ 1137.922274] e1000 0000:00:03.0 enp0s3: Reset adapter
+[ 1140.034283] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+
+
+lee@Qlee-VirtualBox ~ $ uptime
+ 22:16:56 up 33 min,  1 user,  load average: 0.02, 0.09, 0.16
+
+lee@Qlee-VirtualBox ~ $ who am i
+
+
+lee@Qlee-VirtualBox ~ $ whoami
+lee
+
+
+lee@Qlee-VirtualBox ~ $ id
+uid=1000(lee) gid=1000(lee) groups=1000(lee),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),113(lpadmin),130(sambashare)
+
+
+lee@Qlee-VirtualBox ~ $ last
+lee      tty7         :0               Mon Dec  4 21:52    gone - no logout
+reboot   system boot  4.10.0-38-generi Mon Dec  4 21:43   still running
+
+wtmp begins Mon Dec  4 21:43:50 2017
+
+
+lee@Qlee-VirtualBox ~ $ finger
+Login     Name             Tty      Idle  Login Time   Office     Office Phone
+lee       Le Gia Anh Quy   tty7       33  Dec  4 21:52 (:0)
+
+
+lee@Qlee-VirtualBox ~ $ w
+ 22:17:57 up 34 min,  1 user,  load average: 0.00, 0.07, 0.15
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+lee      tty7     :0               21:52   33:53  13.18s  0.19s cinnamon-sessio
+
+
