@@ -59,5 +59,3 @@ lee@Qlee-VirtualBox ~ $ w
  22:17:57 up 34 min,  1 user,  load average: 0.00, 0.07, 0.15
 USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
 lee      tty7     :0               21:52   33:53  13.18s  0.19s cinnamon-sessio
-
-
