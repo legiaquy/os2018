@@ -1,0 +1,22 @@
+lee@Qlee-VirtualBox ~ $ cd /proc
+
+lee@Qlee-VirtualBox /proc $ ls | grep list
+timer_list
+
+lee@Qlee-VirtualBox /proc $ grep -m 1 'cpu cores' /proc/cpuinfo
+cpu cores	: 1
+
+lee@Qlee-VirtualBox /proc $ wc -l /etc/passwd
+43 /etc/passwd
+
+lee@Qlee-VirtualBox /proc $ free
+              total        used        free      shared  buff/cache   available
+Mem:        2045948      992756      671244       31852      381948      844692
+Swap:       2095100        1780     2093320
+
+lee@Qlee-VirtualBox /proc $ cd
+
+lee@Qlee-VirtualBox ~ $ cd Pictures
+
+lee@Qlee-VirtualBox ~/Pictures $ find
+.
