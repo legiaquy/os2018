@@ -1,0 +1,9 @@
+lee@Qlee-VirtualBox ~ $ cat /proc/sched_debug | awk '/systemd/ {print$4; exit}'
+2504
+
+lee@Qlee-VirtualBox ~ $ cat /proc/1/sched | awk '/switch/ {print$3}'
+2505
+1537
+968
+
+
