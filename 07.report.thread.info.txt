@@ -1,0 +1,4 @@
+lee@Qlee-VirtualBox ~ $ ps -o nlwp 1794
+NLWP
+  52
+
