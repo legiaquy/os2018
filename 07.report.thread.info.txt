@@ -2,3 +2,6 @@ lee@Qlee-VirtualBox ~ $ ps -o nlwp 1794
 NLWP
   52
 
+lee@Qlee-VirtualBox /proc $ ls /proc/1794/task | wc
+     57      57     285
+
