@@ -42,7 +42,7 @@ i;
 }
 
 int main(){
-int first,last;
+
 item *chicken=(item*)malloc(sizeof(item));
 item *potatoe=(item*)malloc(sizeof(item));
 chicken->type='0';
