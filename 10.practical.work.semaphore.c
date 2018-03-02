@@ -21,27 +21,17 @@ typedef struct{
 item buffer[BUFFER_SIZE];
 int first = 0;
 int last = 0;
-int m=0;
 sem_t s;
-
-void wait(int S){
-    while (S<=0) return;
-    S--;
-}
-
-void signal(int S){
-    S++;
-}
 
 void produce(item *i) {
     while
     ((first + 1) % BUFFER_SIZE == last) {
     // do nothing -- no free buffer item
     }
-    wait(m);
+    sem_wait(&s);
     memcpy(&buffer[first], i,sizeof(item));
     first = (first + 1) % BUFFER_SIZE;
-    signal(m);
+    sem_post(&s);
 }
 
 item *consume() {
@@ -50,12 +40,12 @@ item *consume() {
     (first == last) {
     // do nothing -- nothing to consume
     }
-    wait(m);
+    sem_wait(&s);
     memcpy(i, &buffer[last],
     sizeof
     (item));
     last = (last + 1) % BUFFER_SIZE;
-    signal(m);
+    sem_post(&s);
     return
     i;
 }
@@ -109,7 +99,8 @@ void *threadFunction2(void *param) {
 
 
 int main(){
-
+   
+    sem_init(&s,0,1);
     // create a background thread to execute threadFunction
     pthread_t tid,tid2;
     pthread_create(
@@ -151,6 +142,7 @@ int main(){
 
     pthread_join(tid,NULL);
     pthread_join(tid2,NULL);
+    sem_destroy(&s);
 
     return 0;
 }
